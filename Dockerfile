@@ -2,9 +2,9 @@ FROM ubuntu:16.04
 
 # Android SDK variables
 
-ENV ANDROID_SDK_URL https://dl.google.com/android/repository/tools_r25.2.5-linux.zip
+ENV ANDROID_SDK_URL https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
 ENV ANDROID_SDK_PATH /android
-ENV ANDROID_SDK_FILTER platform-tool,android-25,build-tools-25.0.2,android-23
+ENV ANDROID_SDK_FILTER platform-tool,android-25,build-tools-25.0.2,android-23,android-28
 
 # Keystore variables
 
