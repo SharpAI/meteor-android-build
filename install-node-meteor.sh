@@ -10,7 +10,7 @@ echo "Installing Meteor..."
 # https://github.com/docker/hub-feedback/issues/727
 
 bash ${SCRIPTS_PATH}/tar-override.sh
-curl https://install.meteor.com/ | sh
+curl https://install.meteor.com/?release=1.4.1.2 | sh
 bash ${SCRIPTS_PATH}/tar-restore.sh
 
 echo "Installing Node..."
