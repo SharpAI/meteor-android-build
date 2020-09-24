@@ -29,11 +29,11 @@ Name | Description | Default
 The following command builds the Meteor app found on `/path/to/meteor/app` using the default keystore. The APK file is configured to connect to the remote Meteor server found on *example.com*. It will be placed under the host's current working directory.
 
 ```
-docker run --rm -it -e APP_SERVER=example.com -v /path/to/meteor/app:/app -v $(pwd):/build agmangas/meteor-android-build
+docker run --rm -it -e APP_SERVER=example.com -v /path/to/meteor/app:/app -v $(pwd):/build shareai/meteor-android-build
 ```
 
 This does the same as above but uses an externally defined keystore located on `/path/to/keystore`.
 
 ```
-docker run --rm -it -e APP_SERVER=example.com -e KEYSTORE_ALIAS=myalias -e KEYSTORE_KEYPASS=mykeypass -e KEYSTORE_STOREPASS=mystorepass -v /path/to/keystore:/keys/keystore:ro -v /path/to/meteor/app:/app -v $(pwd):/build agmangas/meteor-android-build
+docker run --rm -it -e APP_SERVER=example.com -e KEYSTORE_ALIAS=myalias -e KEYSTORE_KEYPASS=mykeypass -e KEYSTORE_STOREPASS=mystorepass -v /path/to/keystore:/keys/keystore:ro -v /path/to/meteor/app:/app -v $(pwd):/build shareai/meteor-android-build
 ```
